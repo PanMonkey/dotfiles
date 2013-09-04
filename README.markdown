@@ -1,3 +1,7 @@
-1. cd $HOME
-1. # git clone
-1. sh -x ./dotfiles/setup.sh
+# セットアップ方法
+
+$ cd $HOME
+
+$ git clone
+
+$ sh -x ./dotfiles/setup.sh
