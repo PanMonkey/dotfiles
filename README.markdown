@@ -12,9 +12,14 @@ dotfilesとは.vimrcや.zhrcなどの設定ファイルの総称です。
         % bash dotfiles/setup.sh
 
 ## zsh
+
 zshインストール方法
+
 1. zsh install
+
         % sudo apt-get install zsh
+        
 2. shell is changed into zsh
+
         % chsh -s /usr/bin/zsh
 
