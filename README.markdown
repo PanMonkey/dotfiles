@@ -1,7 +1,20 @@
-# セットアップ方法
+# dotfiles
 
-$ cd $HOME
+dotfilesとは.vimrcや.zhrcなどの設定ファイルの総称です。
+以下のコマンドで設定できます。
 
-$ git clone
+1. Clone from github
 
-$ sh -x ./dotfiles/setup.sh
+        % git clone git://github.com/PanMonkey/dotfiles.git
+
+2. Running setup.sh
+
+        % bash dotfiles/setup.sh
+
+## zsh
+zshインストール方法
+1. zsh install
+        % sudo apt-get install zsh
+2. shell is changed into zsh
+        % chsh -s /usr/bin/zsh
+

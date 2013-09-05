@@ -1,6 +1,19 @@
 #!/bin/bash
 
-for file in `find $HOME/dotfiles -name '.*' | grep -v 'dotfiles/.git$' | perl -nle 'm!dotfiles/(.+)$! and print $1'`; do
-    ln -s $HOME/dotfiles/$file $HOME/$file
-done
+DOT_FILES=( .zshrc .emacs.d )
 
+for file in ${DOT_FILES[@]}
+do
+    if [ -a $HOME/$file ]; then
+        if [ -L $HOME/$file ]; then
+            echo "既にシンボリックリンクが存在します: $file"
+        elif [ -d $HOME/$file ]; then
+            echo "既にディレクトリが存在します: $file"
+        else
+            echo "既にファイルが存在します: $file"
+        fi
+    else
+        ln -s $HOME/dotfiles/$file $HOME/$file
+        echo "シンボリックリンクを貼りました: $file"
+    fi
+done
