@@ -35,8 +35,6 @@ alias e="emacs"
 ### -nw: ターミナル内でEmacsを起動する。
 alias enw="emacs -nw"
 
-
-
-
-
+# git push でのログイン時にBackSpaceが「^H」になる問題対応
+stty erase ^H
 
