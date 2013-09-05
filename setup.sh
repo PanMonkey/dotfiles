@@ -21,5 +21,3 @@ for dotfile in .?*; do
         ln -s $CURRENT_DIR/$dotfile $HOME
     fi
 done
-
-
