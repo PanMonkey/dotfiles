@@ -2,4 +2,6 @@
 (("/home/lunkhead10/.emacs.d/elpa/archives/gnu/archive-contents" . 5030)
  ("/home/lunkhead10/.emacs.d/elpa/archives/marmalade/archive-contents" . 77319)
  ("/home/lunkhead10/.emacs.d/elpa/archives/melpa/archive-contents" . 137609)
- ("/home/lunkhead10/.emacs.d/init.el" . 1276))
+ ("/home/lunkhead10/.recentf" . 253)
+ ("/home/lunkhead10/dotfiles/.emacs.d/init.el" . 1114)
+ ("/home/lunkhead10/rails_apps/sample_rails4/app/controllers/application_controller.rb" . 202))

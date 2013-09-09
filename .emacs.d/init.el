@@ -22,6 +22,9 @@
     auto-complete
     anything
     linum
+    ruby-block
+    ruby-electric
+    rspec-mode
     ))
 (let ((not-installed (loop for x in installing-package-list
                             when (not (package-installed-p x))
@@ -91,11 +94,11 @@
                (font-lock-fontify-buffer))))
 
 ;; 前回の終了位置を保存する
-(require 'saveplace)
-(setq-default save-place t)
-(setq save-place-file
-      (convert-standard-filename
-       (concat user-emacs-directory "places")))
+;(require 'saveplace)
+;(setq-default save-place t)
+;(setq save-place-file
+;      (convert-standard-filename
+;       (concat user-emacs-directory "places")))
 
 ;; 対応する括弧をハイライト
 (show-paren-mode t)
@@ -104,3 +107,21 @@
 (set-face-attribute 'show-paren-match-face nil
                     :background "#999999" :foreground nil)
 
+;; 折り返し表示（標準は折り返さないが、C-c C-lで切り替え可能）
+(setq-default truncate-partial-width-windows t)
+(setq-default truncate-lines t)
+(global-set-key "\C-c\C-l" 'toggle-truncate-lines)
+
+;; ruby-mode
+(add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
+;; ruby-block
+(require 'ruby-block)
+(ruby-block-mode t)
+(setq ruby-block-highlight-toggle t)
+;; ruby-electric
+(require 'ruby-electric)
+(add-hook 'ruby-mode-hook '(lambda () (ruby-electric-mode t)))
+(setq ruby-electric-expand-delimiters-list nil)
+;; rspec-mode
+(require 'rspec-mode)
+(custom-set-variables '(rspec-use-rake-flag nil))
