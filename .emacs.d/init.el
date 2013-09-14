@@ -8,6 +8,9 @@
 (set-buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
+;; 問い合わせを簡略化 yes/no を y/n
+(fset 'yes-or-no-p 'y-or-n-p)
+
 ;; Package Manegement
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
@@ -32,6 +35,7 @@
     tabbar
     direx
     popwin
+    yasnippet
     ))
 (let ((not-installed (loop for x in installing-package-list
                             when (not (package-installed-p x))
@@ -480,6 +484,29 @@ are always included."
 (global-set-key (kbd "C-x C-j") 'direx:jump-to-directory-other-window)
 
 
+(require 'yasnippet)
 
+(setq yas-snippet-dirs
+      '("~/.emacs.d/snippets"))
+(yas-global-mode 1)
 
+(custom-set-variables '(yas-trigger-key "TAB"))
+
+;; anything interface
+;;(eval-after-load "anything-config"
+;;  '(progn
+;;     (defun my-yas/prompt (prompt choices &optional display-fn)
+;;       (let* ((names (loop for choice in choices
+;;                           collect (or (and display-fn (funcall display-fn choice))
+;;                                       choice)))
+;;              (selected (anything-other-buffer
+;;                         `(((name . ,(format "%s" prompt))
+;;                            (candidates . names)
+;;                            (action . (("Insert snippet" . (lambda (arg) arg))))))
+;;                         "*anything yas/prompt*")))
+;;         (if selected
+;;             (let ((n (position selected names :test 'equal)))
+;;               (nth n choices))
+;;           (signal 'quit "user quit!"))))
+;;     (custom-set-variables '(yas/prompt-functions '(my-yas/prompt)))))
 
