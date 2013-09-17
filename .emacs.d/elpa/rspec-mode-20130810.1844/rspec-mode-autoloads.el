@@ -5,8 +5,9 @@
 
 ;;;### (autoloads (rspec-enable-appropriate-mode rspec-buffer-is-spec-p
 ;;;;;;  rspec-dired-mode rspec-verifiable-mode rspec-mode) "rspec-mode"
-;;;;;;  "rspec-mode.el" (21044 7359 664295 920000))
-;;; Generated autoloads from rspec-mode.el
+;;;;;;  "../../../../.emacs.d/elpa/rspec-mode-20130810.1844/rspec-mode.el"
+;;;;;;  "fa66eb70292249ee2101b147a2b5ee58")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/rspec-mode-20130810.1844/rspec-mode.el
 
 (autoload 'rspec-mode "rspec-mode" "\
 Minor mode for RSpec files
@@ -39,8 +40,9 @@ Returns true if the current buffer is a spec
 
 ;;;***
 
-;;;### (autoloads nil nil ("rspec-mode-pkg.el") (21044 7359 776854
-;;;;;;  916000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/rspec-mode-20130810.1844/rspec-mode-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/rspec-mode-20130810.1844/rspec-mode.el")
+;;;;;;  (21048 21551 966576))
 
 ;;;***
 

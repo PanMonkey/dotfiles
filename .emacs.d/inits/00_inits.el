@@ -21,7 +21,8 @@
 ;; auto-complete
 (global-auto-complete-mode t)
 
-
+;; 問い合わせを簡略化 yes/no を y/n
+(fset 'yes-or-no-p 'y-or-n-p)
 
 ;; anything
 ;; (global-set-key (kbd "C-x b") 'anything)

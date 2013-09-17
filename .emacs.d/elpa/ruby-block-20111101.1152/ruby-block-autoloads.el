@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil nil ("ruby-block-pkg.el" "ruby-block.el") (21044
-;;;;;;  7356 255690 356000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/ruby-block-20111101.1152/ruby-block-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/ruby-block-20111101.1152/ruby-block.el")
+;;;;;;  (21048 21550 506998))
 
 ;;;***
 

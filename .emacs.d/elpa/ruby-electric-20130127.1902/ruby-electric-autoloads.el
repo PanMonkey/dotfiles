@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (ruby-electric-mode) "ruby-electric" "ruby-electric.el"
-;;;;;;  (21044 7357 260326 143000))
-;;; Generated autoloads from ruby-electric.el
+;;;### (autoloads (ruby-electric-mode) "ruby-electric" "../../../../.emacs.d/elpa/ruby-electric-20130127.1902/ruby-electric.el"
+;;;;;;  "fdbcbcda782f237c1f977949c50ebb38")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/ruby-electric-20130127.1902/ruby-electric.el
 
 (autoload 'ruby-electric-mode "ruby-electric" "\
 Toggle Ruby Electric minor mode.
@@ -26,8 +26,9 @@ strings. Note that you must have Font Lock enabled.
 
 ;;;***
 
-;;;### (autoloads nil nil ("ruby-electric-pkg.el") (21044 7357 376734
-;;;;;;  511000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/ruby-electric-20130127.1902/ruby-electric-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/ruby-electric-20130127.1902/ruby-electric.el")
+;;;;;;  (21048 21550 984363))
 
 ;;;***
 

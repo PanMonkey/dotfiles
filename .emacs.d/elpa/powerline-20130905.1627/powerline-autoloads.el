@@ -4,9 +4,9 @@
 
 
 ;;;### (autoloads (powerline-fill powerline-raw defpowerline powerline-concat
-;;;;;;  powerline-mouse powerline-hud) "powerline" "powerline.el"
-;;;;;;  (21044 7361 656270 878000))
-;;; Generated autoloads from powerline.el
+;;;;;;  powerline-mouse powerline-hud) "powerline" "../../../../.emacs.d/elpa/powerline-20130905.1627/powerline.el"
+;;;;;;  "20876372bed361ad275d7671287e58f2")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/powerline-20130905.1627/powerline.el
 
 (autoload 'powerline-hud "powerline" "\
 Return an XPM of relative buffer location using FACE1 and FACE2 of optional WIDTH.
@@ -26,7 +26,7 @@ Concatonate STRINGS and pad sides by spaces.
 (autoload 'defpowerline "powerline" "\
 Create function NAME by wrapping BODY with powerline padding an propetization.
 
-\(fn NAME BODY)" nil t)
+\(fn NAME BODY)" nil (quote macro))
 
 (autoload 'powerline-raw "powerline" "\
 Render STR as mode-line data using FACE and optionally PAD import on left (l) or right (r).
@@ -55,9 +55,9 @@ Return empty space using FACE and leaving RESERVE space on the right.
 ;;;***
 
 ;;;### (autoloads (powerline-nano-theme powerline-vim-theme powerline-center-theme
-;;;;;;  powerline-default-theme) "powerline-themes" "powerline-themes.el"
-;;;;;;  (21044 7361 700270 324000))
-;;; Generated autoloads from powerline-themes.el
+;;;;;;  powerline-default-theme) "powerline-themes" "../../../../.emacs.d/elpa/powerline-20130905.1627/powerline-themes.el"
+;;;;;;  "be9edebf7b79ca4b814bee15ee181581")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/powerline-20130905.1627/powerline-themes.el
 
 (autoload 'powerline-default-theme "powerline-themes" "\
 Setup the default mode-line.
@@ -81,8 +81,11 @@ Setup a nano-like mode-line.
 
 ;;;***
 
-;;;### (autoloads nil nil ("powerline-pkg.el" "powerline-separators.el")
-;;;;;;  (21044 7361 760722 419000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/powerline-20130905.1627/powerline-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/powerline-20130905.1627/powerline-separators.el"
+;;;;;;  "../../../../.emacs.d/elpa/powerline-20130905.1627/powerline-themes.el"
+;;;;;;  "../../../../.emacs.d/elpa/powerline-20130905.1627/powerline.el")
+;;;;;;  (21048 21554 268820))
 
 ;;;***
 
