@@ -24,28 +24,12 @@
 ;; 問い合わせを簡略化 yes/no を y/n
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;; anything
-;; (global-set-key (kbd "C-x b") 'anything)
-;; (global-set-key (kbd "C-x C-b") 'anything-filelist+)
-;; (global-set-key (kbd "M-y") 'anything-show-kill-ring)
-
 ;; cua-mode
 (cua-mode t)
 (setq cua-rectangle-mark-key (kbd "M-SPC"))
 (define-key cua-global-keymap cua-rectangle-mark-key 'cua-set-rectangle-mark)
 (setq cua-enable-cua-keys nil)
 
-;; キーバインド設定
-(define-key global-map (kbd "M-?") 'help-for-help)        ; ヘルプ
-(define-key global-map (kbd "C-c i") 'indent-region)      ; インデント
-(define-key global-map (kbd "C-c C-i") 'hippie-expand)    ; 補完
-(define-key global-map (kbd "C-c ;") 'comment-dwim)       ; コメントアウト
-(define-key global-map (kbd "M-C-g") 'grep)               ; grep
-(define-key global-map (kbd "C-M-f") 'next-multiframe-window)     ; 次のウィンドウへ移動
-(define-key global-map (kbd "C-M-b") 'previous-multiframe-window) ; 前のウィンドウへ移動
-
-
-(global-set-key [f12] 'eval-buffer) ;reload
 
 
 ;; 行末の空白、タブ、全角スペースを可視化する
@@ -88,3 +72,22 @@
 (setq-default truncate-partial-width-windows t)
 (setq-default truncate-lines t)
 (global-set-key "\C-c\C-l" 'toggle-truncate-lines)
+
+
+
+;; Autosave and Backup
+(defvar autosave-dir (expand-file-name "~/.emacs.d/autosave/"))
+(defvar backup-dir (expand-file-name "~/.emacs.d/backup/"))
+(if (file-directory-p backup-dir)
+    (progn
+      (setq backup-directory-alist (list (cons ".*" backup-dir)))
+      (setq tramp-backup-directory-alist backup-directory-alist))
+  (message (concat "Directory does not exist: " backup-dir)))
+(if (not (file-directory-p autosave-dir))
+    (make-directory autosave-dir t))
+(setq auto-save-list-file-prefix autosave-dir)
+(setq auto-save-file-name-transforms `((".*" ,autosave-dir t)))
+(setq delete-old-versions t
+  kept-new-versions 6
+  kept-old-versions 2
+  version-control t)
