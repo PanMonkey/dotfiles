@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (ruby-electric-mode) "ruby-electric" "ruby-electric.el"
-;;;;;;  (21037 50101))
+;;;;;;  (21044 7357 260326 143000))
 ;;; Generated autoloads from ruby-electric.el
 
 (autoload 'ruby-electric-mode "ruby-electric" "\
@@ -26,7 +26,8 @@ strings. Note that you must have Font Lock enabled.
 
 ;;;***
 
-;;;### (autoloads nil nil ("ruby-electric-pkg.el") (21037 50101 602188))
+;;;### (autoloads nil nil ("ruby-electric-pkg.el") (21044 7357 376734
+;;;;;;  511000))
 
 ;;;***
 

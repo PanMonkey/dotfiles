@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (direx:jump-to-directory-other-window direx:jump-to-directory)
-;;;;;;  "direx" "direx.el" (21043 8317))
+;;;;;;  "direx" "direx.el" (21044 7365 892217 625000))
 ;;; Generated autoloads from direx.el
 
 (autoload 'direx:jump-to-directory "direx" "\
@@ -21,7 +21,7 @@
 
 ;;;### (autoloads (direx-project:jump-to-project-root-other-window
 ;;;;;;  direx-project:jump-to-project-root) "direx-project" "direx-project.el"
-;;;;;;  (21043 8317))
+;;;;;;  (21044 7366 16216 65000))
 ;;; Generated autoloads from direx-project.el
 
 (autoload 'direx-project:jump-to-project-root "direx-project" "\
@@ -36,7 +36,7 @@
 
 ;;;***
 
-;;;### (autoloads nil nil ("direx-pkg.el") (21043 8317 226832))
+;;;### (autoloads nil nil ("direx-pkg.el") (21044 7366 76164 465000))
 
 ;;;***
 

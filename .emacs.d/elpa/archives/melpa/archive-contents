@@ -28,14 +28,15 @@
 		 [(20111231 345)
 		  nil "Unfold CSS-selector-like expressions to markup [github]" single])
  (zenburn-theme .
+<<<<<<< HEAD
 		[(20130914 1044)
+=======
+		[(20130913 2102)
+>>>>>>> 99c5be05fbbc5add5898b4e510895637df97a699
 		 nil "A low contrast color theme for Emacs. [github]" single])
  (zen-and-art-theme .
 		    [(20120622 937)
 		     nil "zen and art color theme for GNU Emacs 24 [github]" single])
- (zeitgeist .
-	    [(20120212 140)
-	     nil "No description available. [bzr]" single])
  (yaxception .
 	     [(20130501 727)
 	      nil "provide framework about exception like Java for elisp [github]" single])
@@ -71,9 +72,6 @@
  (xmlgen .
 	 [(20130219 1019)
 	  nil "A DSL for generating XML. [github]" single])
- (xml-rpc .
-	  [(20130423 1656)
-	   nil "An elisp implementation of clientside XML-RPC [bzr]" single])
  (writeroom-mode .
 		 [(20130315 2007)
 		  nil "Minor mode for distraction-free writing [github]" tar])
@@ -201,7 +199,11 @@
 	       (1 6 8)))
 	     "Weblog maintenance via XML-RPC APIs [bzr]" single])
  (web-mode .
+<<<<<<< HEAD
 	   [(20130916 2256)
+=======
+	   [(20130913 2353)
+>>>>>>> 99c5be05fbbc5add5898b4e510895637df97a699
 	    nil "major mode for editing html templates [github]" tar])
  (web .
       [(20130827 1312)
@@ -302,9 +304,6 @@
 		(diminish
 		 (0 44)))
 	       "A use-package declaration for simplifying your .emacs [github]" single])
- (usage-memo .
-	     [(20110722 1551)
-	      nil "integration of Emacs help system and memo [wiki]" single])
  (unicode-whitespace .
 		     [(20121205 1458)
 		      ((ucs-utils
@@ -375,9 +374,6 @@
  (typo .
        [(20130312 1948)
 	nil "Minor mode for typographic editing [github]" single])
- (typing .
-	 [(20121026 2118)
-	  nil "The Typing Of Emacs [wiki]" single])
  (twittering-mode .
 		  [(20130616 1818)
 		   nil "Major mode for Twitter [github]" single])
@@ -448,9 +444,6 @@
 		 (dash
 		  (1 0 3)))
 		"Live Parenscript interaction [github]" single])
- (tree-mode .
-	    [(20121207 1538)
-	     nil "A mode to manage tree widgets [wiki]" single])
  (tracking .
 	   [(20130619 1953)
 	    ((shorten
@@ -464,9 +457,6 @@
  (tox .
       [(20130831 1352)
        nil "Launch current python test with tox [github]" single])
- (top-mode .
-	   [(20130605 1739)
-	    nil "run \"top\" from emacs [wiki]" single])
  (toml-mode .
 	    [(20130302 748)
 	     nil "Mojor mode for editing TOML files [github]" single])
@@ -476,18 +466,9 @@
  (todotxt .
 	  [(20130527 851)
 	   nil "A major mode for editing todo.txt files [github]" single])
- (todochiku .
-	    [(20120202 2005)
-	     nil "A mode for interfacing with Growl, Snarl, and the like. [wiki]" single])
  (tmmofl .
 	 [(20121025 1201)
 	  nil "Calls functions dependant on font lock highlighting at point [hg]" single])
- (time-ext .
-	   [(20130130 2151)
-	    nil "more function for time/date [wiki]" single])
- (tidy .
-       [(20111222 1756)
-	nil "Interface to the HTML Tidy program [wiki]" single])
  (thumb-through .
 		[(20120118 2134)
 		 nil "Plain text reader of HTML documents [github]" single])
@@ -500,15 +481,9 @@
  (thingopt .
 	   [(20120615 1752)
 	    nil "Thing at Point optional utilities [github]" single])
- (thesaurus .
-	    [(20121125 1937)
-	     nil "replace a word with a synonym looked up in a web service. [wiki]" single])
  (theme-changer .
 		[(20130725 2119)
 		 nil "Sunrise/Sunset Theme Changer for Emacs [github]" single])
- (tfs .
-      [(20120508 1820)
-       nil "MS Team Foundation Server commands for Emacs. [wiki]" single])
  (textmate-to-yas .
 		  [(20130509 1054)
 		   nil "Import Textmate macros into yasnippet syntax [github]" tar])
@@ -584,20 +559,12 @@
  (syntactic-sugar .
 		  [(20121205 1457)
 		   nil "Effect-free forms such as if/then/else [github]" single])
- (synonyms .
-	   [(20130724 6)
-	    nil "Look up synonyms for a word or phrase in a thesaurus. [wiki]" single])
  (sws-mode .
 	   [(20120730 2122)
 	    nil "(S)ignificant (W)hite(S)pace mode [github]" single])
  (switch-window .
 		[(20130914 1540)
 		 nil "A *visual* way to choose a window to switch to [github]" single])
- (swbuff-x .
-	   [(20130607 1014)
-	    ((swbuff
-	      (19991231 1800)))
-	    "Modifications to David Ponce's swbuff [wiki]" single])
  (swbuff .
 	 [(20041012 718)
 	  nil "Quick switch between Emacs buffers. [cvs]" single])
@@ -1019,9 +986,6 @@
  (rvm .
       [(20130521 902)
        nil "Emacs integration for rvm [github]" single])
- (rust-mode .
-	    [(20130907 38)
-	     nil "A major emacs mode for editing Rust source code [github]" single])
  (ruby-tools .
 	     [(20121008 1851)
 	      nil "Collection of handy functions for ruby-mode. [github]" tar])
@@ -1526,7 +1490,11 @@
 	  [(20121025 1200)
 	   nil "Predictive abbreviation expansion [hg]" single])
  (p4 .
+<<<<<<< HEAD
      [(20130915 1839)
+=======
+     [(20130912 1535)
+>>>>>>> 99c5be05fbbc5add5898b4e510895637df97a699
       nil "Simple Perforce-Emacs Integration [github]" single])
  (outshine .
 	   [(20130815 1459)
@@ -2171,7 +2139,11 @@
 			       [(20130730 1032)
 				nil "Advice for magit-log-edit-commit [github]" single])
  (magit .
+<<<<<<< HEAD
 	[(20130916 1537)
+=======
+	[(20130912 2355)
+>>>>>>> 99c5be05fbbc5add5898b4e510895637df97a699
 	 ((cl-lib
 	   (0 3))
 	  (git-commit-mode
@@ -2912,7 +2884,11 @@
 	    (20120509)))
 	  "helm-sources and some utilities for GNU R. [github]" single])
  (helm .
+<<<<<<< HEAD
        [(20130917 821)
+=======
+       [(20130912 1551)
+>>>>>>> 99c5be05fbbc5add5898b4e510895637df97a699
 	nil "Helm is an Emacs incremental and narrowing framework [github]" tar])
  (header2 .
 	  [(20130723 2321)
@@ -3535,7 +3511,11 @@
 	  [(20120211 1557)
 	   nil "Fast navigation and editing routines. [github]" single])
  (fasm-mode .
+<<<<<<< HEAD
 	    [(20130914 1603)
+=======
+	    [(20130912 1924)
+>>>>>>> 99c5be05fbbc5add5898b4e510895637df97a699
 	     nil "Fasm major mode [hg]" single])
  (fasd .
        [(20130831 1903)
@@ -3701,7 +3681,11 @@
 	 [(20130827 1016)
 	  nil "Erlang major mode [github]" tar])
  (ergoemacs-mode .
+<<<<<<< HEAD
 		 [(20130916 2324)
+=======
+		 [(20130912 1914)
+>>>>>>> 99c5be05fbbc5add5898b4e510895637df97a699
 		  nil "Emacs mode based on common modern software interface and ergonomics. [github]" tar])
  (erefactor .
 	    [(20130521 1838)
@@ -3897,7 +3881,11 @@
 		(24 1)))
 	      "web interface to Elfeed [github]" tar])
  (elfeed .
+<<<<<<< HEAD
 	 [(20130916 1134)
+=======
+	 [(20130912 1453)
+>>>>>>> 99c5be05fbbc5add5898b4e510895637df97a699
 	  ((emacs
 	    (24 1)))
 	  "an Emacs Atom/RSS feed reader [github]" tar])
@@ -4003,7 +3991,11 @@
       [(20130826 1941)
        nil "a code browser for Emacs [github]" tar])
  (ebib .
+<<<<<<< HEAD
        [(20130917 549)
+=======
+       [(20130912 1312)
+>>>>>>> 99c5be05fbbc5add5898b4e510895637df97a699
 	nil "a BibTeX database manager [github]" tar])
  (easy-after-load .
 		  [(20121224 2049)
@@ -4732,7 +4724,11 @@
 	   [(20130606 946)
 	    nil "open anything / QuickSilver-like candidate-selection framework [git]" tar])
  (anti-zenburn-theme .
+<<<<<<< HEAD
 		     [(20130915 11)
+=======
+		     [(20130912 2305)
+>>>>>>> 99c5be05fbbc5add5898b4e510895637df97a699
 		      nil "Low-contrast Zenburn-inverted theme [github]" single])
  (ansi .
        [(20130827 1653)
@@ -4865,9 +4861,56 @@
  (abc-mode .
 	   [(20130607 917)
 	    nil "Major mode for editing abc music files [github]" single])
+<<<<<<< HEAD
  (ssh-config-mode .
 		  [(20120513 2233)
 		   nil "Mode for fontification of ~/.ssh/config [github]" single])
+=======
+ (zeitgeist .
+	    [(20120212 140)
+	     nil "No description available. [bzr]" single])
+ (xml-rpc .
+	  [(20130423 1656)
+	   nil "An elisp implementation of clientside XML-RPC [bzr]" single])
+ (usage-memo .
+	     [(20110722 1551)
+	      nil "integration of Emacs help system and memo [wiki]" single])
+ (typing .
+	 [(20121026 2118)
+	  nil "The Typing Of Emacs [wiki]" single])
+ (tree-mode .
+	    [(20121207 1538)
+	     nil "A mode to manage tree widgets [wiki]" single])
+ (top-mode .
+	   [(20130605 1739)
+	    nil "run \"top\" from emacs [wiki]" single])
+ (todochiku .
+	    [(20120202 2005)
+	     nil "A mode for interfacing with Growl, Snarl, and the like. [wiki]" single])
+ (time-ext .
+	   [(20130130 2151)
+	    nil "more function for time/date [wiki]" single])
+ (tidy .
+       [(20111222 1756)
+	nil "Interface to the HTML Tidy program [wiki]" single])
+ (thesaurus .
+	    [(20121125 1937)
+	     nil "replace a word with a synonym looked up in a web service. [wiki]" single])
+ (tfs .
+      [(20120508 1820)
+       nil "MS Team Foundation Server commands for Emacs. [wiki]" single])
+ (synonyms .
+	   [(20130724 6)
+	    nil "Look up synonyms for a word or phrase in a thesaurus. [wiki]" single])
+ (swbuff-x .
+	   [(20130607 1014)
+	    ((swbuff
+	      (19991231 1800)))
+	    "Modifications to David Ponce's swbuff [wiki]" single])
+ (rust-mode .
+	    [(20130907 38)
+	     nil "A major emacs mode for editing Rust source code [github]" single])
+>>>>>>> 99c5be05fbbc5add5898b4e510895637df97a699
  (org-mac-link-grabber .
 		       [(20130514 1519)
 			nil "Grab links and url from various mac [git]" single])

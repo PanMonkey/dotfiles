@@ -23,3 +23,8 @@ zshインストール方法
 
         % chsh -s /usr/bin/zsh
 
+## emacs
+
+前提条件
+
+・version 24 以上
