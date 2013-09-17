@@ -71,8 +71,8 @@ are always included."
 (setq tabbar-buffer-list-function 'my-tabbar-buffer-list)
  
 ;; タブ移動キーバインド
-(global-set-key (kbd "C-M-n") 'tabbar-forward-tab)
-(global-set-key (kbd "C-M-p") 'tabbar-backward-tab)
+(global-set-key (kbd "M-n") 'tabbar-forward-tab)
+(global-set-key (kbd "M-p") 'tabbar-backward-tab)
 
 
 

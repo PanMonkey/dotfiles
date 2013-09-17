@@ -10,9 +10,11 @@
     init-loader
     auto-complete
     helm
+    rinari
     ruby-block
     ruby-electric
     rspec-mode
+    rhtml-mode
     powerline
     tabbar
     direx

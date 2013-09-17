@@ -65,3 +65,15 @@
              ;; C-x .で補完出来るようキーを設定
              (define-key ruby-mode-map (kbd "C-x .") 'ac-complete-rsense)))
 
+
+(require 'ido)
+(ido-mode t)
+
+;; Rinari
+(require 'rinari)
+(global-rinari-mode)
+(setq rinari-exclude-major-modes '(magit-status-mode magit-log-edit-mode))
+
+(require 'rhtml-mode)
+(add-hook 'rhtml-mode-hook
+    (lambda () (rinari-launch)))
