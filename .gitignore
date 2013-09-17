@@ -1,8 +1,19 @@
 *.swp
+
+# emacs
 *~
+\#*\#
+/.emacs.d/*
+!/.emacs.d/init.el
+!/.emacs.d/inits
+!/.emacs.d/opt
+
 .DS_Store
 Thumbs.db
 
 backups/*
 !backups/.gitkeep
+
+
+
 
