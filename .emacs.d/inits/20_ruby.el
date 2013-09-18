@@ -66,13 +66,30 @@
              (define-key ruby-mode-map (kbd "C-x .") 'ac-complete-rsense)))
 
 
-(require 'ido)
-(ido-mode t)
 
 ;; Rinari
+;; C-c ; f fRAILS_ROOT/
+;; C-c ; f capp/controller/
+;; C-c ; f mapp/models/
+;; C-c ; f vapp/views/
+;; C-c ; f happ/helper/
+;; C-c ; f idb/migrate/
+;; C-c ; f nconfig/
+;; C-c ; f econfig/environment/
+;; C-c ; f jpubic/javascript/
+;; C-c ; f lvendor/plugin/
+;; C-c ; f olog/
+;; C-c ; f ppublic/
+;; C-c ; f sscript/
+;; C-c ; f ttest/
+;; C-c ; f wlib/workers/
+;; C-c ; f xtest/fixtures/
+;; C-c ; f ypublic/stylesheets/
+;; C-c ; f rspec/
+;; C-c ; f zspec/fixtures
 (require 'rinari)
 (global-rinari-mode)
-(setq rinari-exclude-major-modes '(magit-status-mode magit-log-edit-mode))
+
 
 (require 'rhtml-mode)
 (add-hook 'rhtml-mode-hook

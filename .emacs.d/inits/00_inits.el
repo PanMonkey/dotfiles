@@ -30,6 +30,8 @@
 (define-key cua-global-keymap cua-rectangle-mark-key 'cua-set-rectangle-mark)
 (setq cua-enable-cua-keys nil)
 
+(require 'ido)
+(ido-mode t)
 
 
 ;; 行末の空白、タブ、全角スペースを可視化する
@@ -91,3 +93,19 @@
   kept-new-versions 6
   kept-old-versions 2
   version-control t)
+
+
+(add-to-list 'load-path
+              "~/.emacs.d/yasnippets")
+(require 'yasnippet)
+(yas-global-mode 1)
+
+(custom-set-variables '(yas-trigger-key "TAB"))
+
+;; 既存スニペットを挿入する
+(define-key yas-minor-mode-map (kbd "C-x i i") 'yas-insert-snippet)
+;; 新規スニペットを作成するバッファを用意する
+(define-key yas-minor-mode-map (kbd "C-x i n") 'yas-new-snippet)
+;; 既存スニペットを閲覧・編集する
+(define-key yas-minor-mode-map (kbd "C-x i v") 'yas-visit-snippet-file)
+
