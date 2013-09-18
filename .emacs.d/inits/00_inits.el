@@ -109,3 +109,11 @@
 ;; 既存スニペットを閲覧・編集する
 (define-key yas-minor-mode-map (kbd "C-x i v") 'yas-visit-snippet-file)
 
+
+;;; color-occur.el
+;; 検索結果一覧
+;; isearch実行時にM-oを押すと、M-x occur-by-moccurに切り替え
+(require 'color-moccur)
+;(setq moccur-split-word t) ;スペースで区切られた複数の単語にマッチさせる
+(global-set-key "\C-c\C-f" 'moccur-grep-find)
+(global-set-key "\C-c\C-g" 'moccur)
