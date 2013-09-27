@@ -117,3 +117,8 @@
 ;(setq moccur-split-word t) ;スペースで区切られた複数の単語にマッチさせる
 (global-set-key "\C-c\C-f" 'moccur-grep-find)
 (global-set-key "\C-c\C-g" 'moccur)
+
+
+;; 試したいパッケージ
+;; ctags     ：定義ジャンプ
+;; emmet_mode：htmlタグ上部表示
