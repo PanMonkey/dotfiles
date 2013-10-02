@@ -47,7 +47,7 @@
  
 ;; タブに表示させるバッファの設定
 (defvar my-tabbar-displayed-buffers
- '("scratch*" "*Messages*" "*Backtrace*" "*Colors*" "*Faces*" "*vc-")
+ '("scratch*" "*Messages*" "*Backtrace*" "*Colors*" "*Faces*" "*vc-" "*eshell*")
   "*Regexps matches buffer names always included tabs.")
 (defun my-tabbar-buffer-list ()
   "Return the list of buffers to show in tabs.
@@ -69,16 +69,16 @@ are always included."
         tabs
       (cons cur-buf tabs))))
 (setq tabbar-buffer-list-function 'my-tabbar-buffer-list)
- 
+
 ;; タブ移動キーバインド
-(global-set-key (kbd "M-n") 'tabbar-forward-tab)
-(global-set-key (kbd "M-p") 'tabbar-backward-tab)
-
-
+;; (global-set-key (kbd "M-n") 'tabbar-forward-tab)
+;; (global-set-key (kbd "M-p") 'tabbar-backward-tab)
+(global-set-key (kbd "C-x <right>") 'tabbar-forward-tab)
+(global-set-key (kbd "C-x <left>") 'tabbar-backward-tab)
 
 ;; タブモードのオン/オフをトグル
 (global-set-key (kbd "M-4") 'tabbar-mode)
- 
+
 ;; Sort tabbar buffers by name
 ;; (defun tabbar-add-tab (tabset object &amp;optional append_ignored)
 ;;  "Add to TABSET a tab with value OBJECT if there isn't one there yet.
