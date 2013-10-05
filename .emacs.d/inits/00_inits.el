@@ -8,12 +8,8 @@
 (set-buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-
-;; (require 'anything-startup)
 (require 'auto-complete)
 (require 'auto-complete-config)
-
-;; (require 'linum)
 
 (global-linum-mode t)
 (setq linum-format "%3d|")
@@ -30,9 +26,9 @@
 (define-key cua-global-keymap cua-rectangle-mark-key 'cua-set-rectangle-mark)
 (setq cua-enable-cua-keys nil)
 
+;; ido-mode
 (require 'ido)
 (ido-mode t)
-
 
 ;; 行末の空白、タブ、全角スペースを可視化する
 (defface my-face-tab         '((t (:background "#555555"))) nil :group 'my-faces)
@@ -56,13 +52,6 @@
                (font-lock-mode t)
                (font-lock-fontify-buffer))))
 
-;; 前回の終了位置を保存する
-;(require 'saveplace)
-;(setq-default save-place t)
-;(setq save-place-file
-;      (convert-standard-filename
-;       (concat user-emacs-directory "places")))
-
 ;; 対応する括弧をハイライト
 (show-paren-mode t)
 (setq show-paren-delay 0)
@@ -74,8 +63,6 @@
 (setq-default truncate-partial-width-windows t)
 (setq-default truncate-lines t)
 (global-set-key "\C-c\C-l" 'toggle-truncate-lines)
-
-
 
 ;; Autosave and Backup
 (defvar autosave-dir (expand-file-name "~/.emacs.d/autosave/"))

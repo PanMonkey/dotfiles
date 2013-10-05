@@ -1,6 +1,6 @@
-
-;;--------------------------------------------------------------------------------
-;; = ディレクトリツリー表示 =
+;;-----------------------------
+;; ディレクトリツリー表示
+;;-----------------------------
 ;; n,        C-n,<down>       direx:next-node              次のノードを選択する
 ;; p,        C-p,<up>         direx:previous-node          前のノードを選択する
 ;; C-M-n,    C-M-<down>       direx:next-sibling           次の兄弟ノードを選択する
@@ -21,5 +21,3 @@
 (push '(direx:direx-mode :position left :width 40 :dedicated t)
       popwin:special-display-config)
 (global-set-key (kbd "C-x C-j") 'direx:jump-to-directory-other-window)
-
-

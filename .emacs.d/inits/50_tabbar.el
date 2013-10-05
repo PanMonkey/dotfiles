@@ -1,4 +1,6 @@
-;; tabbar.el
+;;---------------------------------
+;; タブ
+;;---------------------------------
 (require 'tabbar)
 (tabbar-mode 1)
  
@@ -47,7 +49,8 @@
  
 ;; タブに表示させるバッファの設定
 (defvar my-tabbar-displayed-buffers
- '("scratch*" "*Messages*" "*Backtrace*" "*Colors*" "*Faces*" "*vc-" "*eshell*")
+;; '("scratch*" "*Messages*" "*Backtrace*" "*Colors*" "*Faces*" "*vc-" "*eshell*")
+ '("*Colors*" "*Faces*" "*vc-" "*eshell*")
   "*Regexps matches buffer names always included tabs.")
 (defun my-tabbar-buffer-list ()
   "Return the list of buffers to show in tabs.
