@@ -1,7 +1,10 @@
 ;; Mode line setup
 (setq-default
  mode-line-format
- '(; Position, including warning for 80 columns
+ '("%e"
+   mode-line-mule-info
+   " "
+   ; Position, including warning for 80 columns
    (:propertize "%4l:" face mode-line-position-face)
    (:eval (propertize "%3c" 'face
                       (if (>= (current-column) 80)
