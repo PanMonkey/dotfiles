@@ -15,6 +15,7 @@
     ruby-electric
     rspec-mode
     rhtml-mode
+    nyan-mode
     powerline
     tabbar
     direx
