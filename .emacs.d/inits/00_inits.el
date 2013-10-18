@@ -22,7 +22,7 @@
 
 ;; cua-mode
 (cua-mode t)
-(setq cua-rectangle-mark-key (kbd "M-SPC"))
+(setq cua-rectangle-mark-key (kbd "M-@"))
 (define-key cua-global-keymap cua-rectangle-mark-key 'cua-set-rectangle-mark)
 (setq cua-enable-cua-keys nil)
 
