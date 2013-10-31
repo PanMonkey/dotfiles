@@ -23,6 +23,7 @@
 ;; cua-mode
 (cua-mode t)
 (setq cua-rectangle-mark-key (kbd "M-@"))
+(setq cua-rectangle-mark-key (kbd "M-SPC"))
 (define-key cua-global-keymap cua-rectangle-mark-key 'cua-set-rectangle-mark)
 (setq cua-enable-cua-keys nil)
 
@@ -59,14 +60,18 @@
 (set-face-attribute 'show-paren-match-face nil
                     :background "#999999" :foreground nil)
 
+
 ;; 折り返し表示（標準は折り返さないが、C-c C-lで切り替え可能）
 (setq-default truncate-partial-width-windows t)
 (setq-default truncate-lines t)
 (global-set-key "\C-c\C-l" 'toggle-truncate-lines)
 
+
 ;; Autosave and Backup
 (defvar autosave-dir (expand-file-name "~/.emacs.d/autosave/"))
 (defvar backup-dir (expand-file-name "~/.emacs.d/backup/"))
+(if (not (file-directory-p backup-dir))
+    (make-directory backup-dir t))
 (if (file-directory-p backup-dir)
     (progn
       (setq backup-directory-alist (list (cons ".*" backup-dir)))

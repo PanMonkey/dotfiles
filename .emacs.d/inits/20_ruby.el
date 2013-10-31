@@ -6,6 +6,12 @@
 (defun ruby-mode-set-encoding () ())        ;magic commentの無効化
 (custom-set-variables
  '(ruby-insert-encoding-magic-comment nil))
+
+
+;; yaml-mode
+(when (require 'yaml-mode nil t)
+  (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode)))
+
 ;;--------------------------------------------------------
 ;;                     rhtml-mode
 ;;--------------------------------------------------------
