@@ -1,5 +1,5 @@
 # Ctrl + zにescapeを変更
-escape ^Qq
+escape ^z^z
 
 startup_message off
 
@@ -22,7 +22,7 @@ bindkey -m ^[b stuff B
 bindkey -m ^[f stuff E
 
 # コピー。 ctrl-space は動かないので諦めた
-# bindkey -m ^' ' stuff ' '
+ bindkey -m ^' ' stuff ' '
 
 # Xclip を使って、 X のクリップボードへ
 # Space で選択開始、 M-w (または M-W) でコピー
@@ -32,4 +32,3 @@ bindkey -m ^[W eval 'msgwait 0' 'stuff \040' writebuf 'exec !!! xclip /tmp/scree
 hardstatus alwayslastline
 hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{y} %l %{c}%m/%d/%y %{W}%c %{g}]'
 defwrap off
-
