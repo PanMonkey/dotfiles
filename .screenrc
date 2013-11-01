@@ -1,5 +1,5 @@
 # Ctrl + zにescapeを変更
-escape ^z^z
+escape ^Zz
 
 startup_message off
 
